@@ -1,0 +1,274 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: none;
+    color: balck;
+}
+
+.firstPage ,.firstPage a{
+    margin-top: 5px;
+    background-color:#015761;
+    color: white;
+    padding: 11px;
+}
+
+
+header .row {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topBar {
+    width: 200px;
+    height: 100%;
+}
+
+
+.logo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top:25px;
+}
+
+#menu-wrap li {
+    display: inline-block;
+    list-style-type: none;
+    margin-top:0px;
+}
+#menu-wrap li:hover{
+    color:#F7DB4F;
+}
+#menu-wrap li::before,#menu-wrap li::after {
+    display:block;
+    content: '';
+    border-bottom: solid 4px #F7DB4F;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    margin:2px;
+}
+
+#menu-wrap li:hover:before,#menu-wrap li:hover::after {
+    transform: scaleX(1);  
+}
+
+
+.menuNavigation {
+    margin-top: 0px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.isClicked {
+    display: block;
+    position: absolute;
+    border: 2px solid grey;
+}
+
+.burgerMenu {
+    width: 32px;
+    height: 5px;
+    background-color: black;
+    margin: 5px 0;
+
+}
+
+#intro {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    text-align: center;
+}
+
+.more {
+    padding: 20px;
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+}
+.more a ,#myResume,.myService,.skillsNavigator,#submit{
+    border:2px solid #F7DB4F;
+    padding: 20px; 
+    color:#F7DB4F;
+    background: #015761;;
+    transition: background .5s ease-in-out;
+}
+.more a:hover,#myResume:hover ,
+.myService:hover,.skillsNavigator:hover,#submit:hover{
+
+    color:#015761;
+    background: #F7DB4F;
+    
+}
+
+.intro-social {
+    list-style-type: none;
+}
+
+.intro-social li {
+    padding: 10px;
+    margin: 20px;
+    display: inline;
+    border: 2px solid #F7DB4F;;
+    border-radius: 2px;
+}
+
+.intro-social i {
+    transition: all 800ms ease-in-out;
+    font-size: 24px;
+}
+
+.intro-social i:hover {
+    transform: rotate(360deg);
+}
+
+
+
+/* ============================= */
+/* starting about me Page */
+#about,
+#services,
+#contact {
+    width: 100%;
+    text-align: center;
+    /* background-color: #333B50; */
+}
+.headingColor{
+    color:#015761;;
+}
+#services
+{
+background:#f0efef;
+}
+
+#about div {
+    margin: 20px;
+}
+
+.about-wrapper,
+.ownbtn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-wrapper {
+    width: 50%;
+}
+
+.image-wrapper {
+    width: 400px;
+    overflow: hidden;
+}
+
+.ownbtn {
+    justify-content: space-evenly;
+}
+
+#myResume,
+.myService {
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* =========================== */
+/* starting skills page */
+
+#skills {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: auto;
+}
+.skillsNavigator{
+    width:100px;
+    margin:auto;
+    padding: 10px;
+    text-align: center;
+}
+.each-skill {
+    width:40%;
+    margin: 15px;
+}
+
+#skills li {
+    width:50%;
+    list-style-type: none;
+    border: 2px solid #015761;
+    border-radius: 40px;
+    margin:10px;
+    text-align: center;
+}
+
+
+
+/* ================================= */
+/* starting contact page */
+#contact {
+    border: 2px solid grey;
+
+        
+    background-color:#015761;
+    color: white;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.name-email,
+.messageBox {
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.messageBox {
+    padding-bottom: 100px;
+}
+
+#submit {
+    padding: 10px 30px 10px 30px;
+    /* border-radius: 8px; */
+}
+
+#contact .info {
+    margin: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#contact #showNumber {
+    padding: 8px;
+    margin-top: 10px;
+}
