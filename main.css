@@ -14,9 +14,10 @@ a {
     color: balck;
 }
 
-.firstPage ,.firstPage a{
+.firstPage,
+.firstPage a {
     margin-top: 5px;
-    background-color:#015761;
+    background-color: #015761;
     color: white;
     padding: 11px;
 }
@@ -47,28 +48,32 @@ header .row {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 #menu-wrap li {
     display: inline-block;
     list-style-type: none;
-    margin-top:0px;
-}
-#menu-wrap li:hover{
-    color:#F7DB4F;
-}
-#menu-wrap li::before,#menu-wrap li::after {
-    display:block;
-    content: '';
-    border-bottom: solid 4px #F7DB4F;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
-    margin:2px;
+    margin-top: 0px;
 }
 
-#menu-wrap li:hover:before,#menu-wrap li:hover::after {
-    transform: scaleX(1);  
+#menu-wrap li:hover {
+    color: #F7DB4F;
+}
+
+#menu-wrap li::before,
+#menu-wrap li::after {
+    display: block;
+    content: '';
+    border-bottom: solid 4px #F7DB4F;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    margin: 2px;
+}
+
+#menu-wrap li:hover:before,
+#menu-wrap li:hover::after {
+    transform: scaleX(1);
 }
 
 
@@ -107,19 +112,29 @@ header .row {
     margin: auto;
     margin-top: 50px;
 }
-.more a ,#myResume,.myService,.skillsNavigator,#submit{
-    border:2px solid #F7DB4F;
-    padding: 20px; 
-    color:#F7DB4F;
-    background: #015761;;
+
+.more a,
+#myResume,
+.myService,
+.skillsNavigator,
+#submit {
+    border: 2px solid #F7DB4F;
+    padding: 20px;
+    color: #F7DB4F;
+    background: #015761;
+    ;
     transition: background .5s ease-in-out;
 }
-.more a:hover,#myResume:hover ,
-.myService:hover,.skillsNavigator:hover,#submit:hover{
 
-    color:#015761;
+.more a:hover,
+#myResume:hover,
+.myService:hover,
+.skillsNavigator:hover,
+#submit:hover {
+
+    color: #015761;
     background: #F7DB4F;
-    
+
 }
 
 .intro-social {
@@ -130,7 +145,8 @@ header .row {
     padding: 10px;
     margin: 20px;
     display: inline;
-    border: 2px solid #F7DB4F;;
+    border: 2px solid #F7DB4F;
+    ;
     border-radius: 2px;
 }
 
@@ -154,12 +170,14 @@ header .row {
     text-align: center;
     /* background-color: #333B50; */
 }
-.headingColor{
-    color:#015761;;
+
+.headingColor {
+    color: #015761;
+    ;
 }
-#services
-{
-background:#f0efef;
+
+#services {
+    background: #f0efef;
 }
 
 #about div {
@@ -206,26 +224,35 @@ img {
     flex-flow: row wrap;
     margin: auto;
 }
-.skillsNavigator{
-    width:100px;
-    margin:auto;
+
+.skillsNavigator {
+    width: 100px;
+    margin: auto;
     padding: 10px;
     text-align: center;
 }
+
 .each-skill {
-    width:40%;
+    width: 40%;
     margin: 15px;
 }
 
 #skills li {
-    width:50%;
+    width: 50%;
     list-style-type: none;
-    border: 2px solid #015761;
     border-radius: 40px;
-    margin:10px;
+    margin: 10px;
     text-align: center;
+    padding: 10px;
+    background: #eee;
+    transform: translateY(0px);
+    transition: transform .5s;
 }
 
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: -5px 30px 41px -12px rgba(0, 0, 0, 0.75);
+}
 
 
 /* ================================= */
@@ -233,8 +260,8 @@ img {
 #contact {
     border: 2px solid grey;
 
-        
-    background-color:#015761;
+
+    background-color: #015761;
     color: white;
 }
 
@@ -250,6 +277,8 @@ img {
     width: 50%;
     margin: 10px;
     padding: 20px;
+    border-radius: 7px;
+    outline: none;
 }
 
 .messageBox {
